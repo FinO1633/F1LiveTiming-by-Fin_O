@@ -1,0 +1,60 @@
+F1 LIVE TIMING by Fin_O — SZYBKI START
+
+1. POBIERANIE I AKTYWACJA
+Pobierz EXE z zakładki Releases:
+https://github.com/FinO1633/F1LiveTiming-by-Fin_O/releases
+Uruchom go na tym samym komputerze z Windows, na którym działa gra.
+Nie musisz instalować Pythona.
+Przy pierwszym uruchomieniu wpisz KOD AKTYWACYJNY otrzymany od Fin_O/administratora
+i kliknij „Aktywuj”. Pierwsza aktywacja wymaga połączenia z internetem.
+Program zapamiętuje aktywację — nie wpisujesz kodu przy każdym uruchomieniu.
+Kod ma limit instalacji ustalony przez administratora. Jeśli go osiągniesz,
+skontaktuj się z administratorem. Nie udostępniaj kodu ani plików aktywacji.
+
+2. WŁĄCZ TELEMETRIĘ W GRZE
+W ustawieniach gry znajdź sekcję telemetrii (Telemetry Settings) i ustaw:
+
+Telemetria UDP / UDP Telemetry:               Włączona / On
+Tryb rozgłaszania UDP / UDP Broadcast Mode:   Wyłączony / Off
+Adres IP UDP / UDP IP Address:               127.0.0.1
+Port UDP / UDP Port:                         20777
+Format UDP / UDP Format:                     2026
+Twoja telemetria / Your Telemetry:           Publiczna / Public
+
+Ta wersja trackera odbiera format UDP 2026 (F1 25: 2026 Season Pack).
+Starsze formaty UDP nie zadziałają. Te ustawienia dotyczą gry i trackera
+działających na TYM SAMYM komputerze, nie gry na konsoli lub innym komputerze.
+Pozostali kierowcy online również muszą mieć telemetrię Public, żeby ich
+ograniczane dane samochodu były dostępne. Brak danych innego kierowcy nie
+zawsze oznacza błąd programu. Nazwy ustawień mogą różnić się w tłumaczeniu gry.
+
+3. URUCHOM SESJĘ
+Pozostaw tracker otwarty, uruchom grę i wejdź do treningu, kwalifikacji lub wyścigu.
+Najlepiej włączyć tracker przed rozpoczęciem sesji, aby zapisywał historię kółek.
+Dane pojawią się, gdy gra zacznie wysyłać telemetrię; w menu może być WAITING.
+Historia i okrążenia referencyjne wymagają danych zarejestrowanych podczas sesji.
+
+4. PODGLĄD I UDOSTĘPNIANIE
+OPEN LOCAL VIEW: otwiera podgląd na Twoim komputerze.
+Adres lokalny: http://127.0.0.1:5000
+COPY ENGINEER LINK: kopiuje link do zdalnego podglądu dla inżyniera/znajomego.
+OPEN LINK: otwiera ten zdalny podgląd w przeglądarce.
+Link przekazuj tylko osobom, którym chcesz udostępnić dane.
+Nie zamykaj trackera podczas używania. Zamknięcie zatrzymuje zbieranie
+telemetrii i udostępnianie danych.
+
+5. GDY COŚ NIE DZIAŁA
+- Brak telemetrii: sprawdź UDP On, Broadcast Off, IP, port i format powyżej;
+  wejdź do sesji i upewnij się, że działa tylko jedna kopia trackera.
+- Brak części danych opon/baterii: sprawdź ustawienie Public u kierowców.
+- Brak zdalnego linku: sprawdź internet i aktywację. Daj serwerowi chwilę
+  na uruchomienie i spróbuj ponownie.
+- Błędny/zablokowany kod lub limit instalacji: skontaktuj się z administratorem.
+  Po otrzymaniu nowego kodu użyj przycisku „Zmień kod dostępu”.
+
+Po aktywacji lokalny podgląd może działać bez internetu. Zablokowanie kodu
+zatrzymuje zdalne udostępnianie, ale nie wyłącza wcześniej aktywowanego podglądu
+lokalnego.
+
+Dokumentacja telemetrii (EA):
+https://forums.ea.com/blog/f1-games-game-info-hub-en/ea-sports%E2%84%A2-f1%C2%AE25-2026-season-pack-udp-specification/12187347

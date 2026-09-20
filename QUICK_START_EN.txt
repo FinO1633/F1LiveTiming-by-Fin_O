@@ -1,0 +1,57 @@
+F1 LIVE TIMING by Fin_O — QUICK START
+
+1. DOWNLOAD AND ACTIVATE
+Download the EXE from Releases:
+https://github.com/FinO1633/F1LiveTiming-by-Fin_O/releases
+Run it on the same Windows PC as the game. Python is not required.
+On first launch, enter the ACTIVATION CODE provided by Fin_O/the administrator
+and click "Aktywuj" (Activate). Internet access is required for activation.
+Your activation is remembered; you do not need to enter the code every time.
+The code has an installation limit set by the administrator. If you reach it,
+contact the administrator. Do not share your code or activation files.
+
+2. ENABLE GAME TELEMETRY
+In the game's settings, open the Telemetry Settings section and set:
+
+UDP Telemetry:             On
+UDP Broadcast Mode:        Off
+UDP IP Address:            127.0.0.1
+UDP Port:                  20777
+UDP Format:                2026
+Your Telemetry:            Public
+
+This build accepts the 2026 UDP format (F1 25: 2026 Season Pack).
+Older UDP formats will not work. This configuration is for the game and tracker
+running on the SAME PC, not for receiving telemetry from a console/another PC.
+Other online drivers need Public telemetry for their restricted car data to
+be available. Missing data for another driver does not always indicate a bug.
+
+3. START A SESSION
+Keep the tracker open, start the game and enter a practice, qualifying or race
+session. Ideally start the tracker before the session to record lap history.
+Data appears when the game starts sending telemetry; the main menu may show
+WAITING. History and reference laps require data recorded during the session.
+
+4. VIEW OR SHARE
+OPEN LOCAL VIEW: opens the dashboard on your own PC.
+Local address: http://127.0.0.1:5000
+COPY ENGINEER LINK: copies the remote viewing link for your engineer/friend.
+OPEN LINK: opens that remote dashboard in your browser.
+The viewer needs only a browser.
+Only share the viewing link with people you want to give access to your data.
+Keep the tracker running. Closing it stops telemetry collection and sharing.
+
+5. IF SOMETHING DOES NOT WORK
+- No telemetry: check UDP On, Broadcast Off, IP, port and format above; enter a
+  session and make sure only one tracker instance is running.
+- Some tyre/battery values missing: check the drivers' Public telemetry setting.
+- No remote link: check internet and activation status. Give the server time
+  to wake up, then try again.
+- Wrong/blocked code or installation limit: contact the administrator.
+  Use "Zmień kod dostępu" (Change access code) if you are given a replacement.
+
+After activation, local viewing can work offline. Blocking a code stops remote
+sharing but does not disable previously activated local viewing.
+
+Telemetry reference (EA):
+https://forums.ea.com/blog/f1-games-game-info-hub-en/ea-sports%E2%84%A2-f1%C2%AE25-2026-season-pack-udp-specification/12187347
